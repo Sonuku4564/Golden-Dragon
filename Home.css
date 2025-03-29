@@ -9,10 +9,7 @@ body{
     background-color: #f8f8f8;
 }
 
-/* .main-container {
-    width: 100%;
-    padding: 20px;
-} */
+/* Navbar*/
 
 .navbar{
     display: flex;
@@ -68,6 +65,8 @@ body{
     background: #d7451c;
 }
 
+/* Hero Section */
+
 .hero{
     background-image: url('./Assets/Home.jpg');
     background-repeat: no-repeat;
@@ -105,4 +104,74 @@ body{
 .herosection p{
     font-size: 18px;
     margin-bottom: 20px;
+}
+
+
+/* About us Section */
+.about{
+    padding: 80px 20px;
+    background: white;
+    text-align: center;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 1150px;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.about-content {
+    margin-left: 50px;
+    text-align: left;
+}
+
+.about-content h3 {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.about-content h1 {
+    font-size: 38px;
+    color: #d7451c;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.stats div {
+    background: #ffe8e4;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #d7451c;
+    text-align: center;
+    min-width: 120px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.owner {
+    font-style: italic;
+    margin-top: 20px;
 }
