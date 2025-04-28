@@ -68,7 +68,7 @@ body{
 /* Hero Section */
 
 .hero{
-    background-image: url('./Assets/Home.jpg');
+    background-image: url('./Assets/Home.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;    
@@ -104,12 +104,13 @@ body{
 .herosection p{
     font-size: 18px;
     margin-bottom: 20px;
+    font-weight: semibold;
 }
 
 
 /* About us Section */
 .about{
-    padding: 80px 20px;
+    padding: 100px 20px;
     background: white;
     text-align: center;
 }
@@ -174,4 +175,193 @@ body{
 .owner {
     font-style: italic;
     margin-top: 20px;
+}
+
+/*Menu Section*/
+.menu-section h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #d7451c;
+}
+
+.menu-section h1{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.food-items{
+    display: grid;
+    grid-column: 2;
+}
+
+.menu{
+    text-align: center;
+    background-color:#ffe8e4;
+    padding: 60px 20px;
+}
+
+.menu h2{
+    font-size: 24px;
+    color: #d7451c;
+}
+
+.menu h1{
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.menu-columns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+.menu-sections{
+    width: 40%;
+}
+
+.section-title{
+    font-size: 20px;;
+    color: #d7451c;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+
+li img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.price{
+    float: right;
+    font-weight: bold;
+}
+
+/* Gallery Section*/
+
+.gallery{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.display-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.play-button{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #d7451c;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-text{
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+/* Hidden Video Popup*/
+.video-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-popup video{
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+}
+
+
+/* Why Choose Us Section */
+.why-choose-us{
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    width: 100%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose-image{
+    width: 400px;
+    border-radius: 12px;
+}
+.features{
+    margin-top: 20px;
+}
+
+.features h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+} 
+
+.feature{
+    margin-bottom: 20px;
+}
+
+.feature h3{
+    color: #f4a261;
+    margin-bottom: 5px;
+}
+
+.learn-more-button{
+    margin-top: 20px;
+    background:#d7451c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 24px;
 }

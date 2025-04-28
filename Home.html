@@ -21,10 +21,10 @@
         </div>
         <div class="nav-items">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
         </div>
@@ -34,20 +34,21 @@
       </nav>
 
       <!-- Hero Section-->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="overlay"></div>
         <div class="herosection">
           <h2>Experience the Essence of Fast Food in Every Bite</h2>
           <h1>Authentic Flavors, Fast & Fresh!</h1>
           <p>
             we bring the rich and bold flavors of Chinese fast food cuisines
+            <br />
             straight to your plate quick, fresh, and bursting with authenticity.
           </p>
         </div>
       </section>
 
       <!-- About Us Section-->
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-container">
           <div class="about-image">
             <img src="./Assets/n1.jpg" alt="family photo" />
@@ -55,7 +56,7 @@
 
           <div class="about-content">
             <h3>About us</h3>
-            <h1>Golden Dragon: Fast, Fresh <br>and Full of Flavors!</h1>
+            <h1>Golden Dragon: Fast, Fresh <br />and Full of Flavors!</h1>
             <p>
               We bring you the best of Chinese cuisine, serving up mouthwatering
               dishes made with fresh ingredients and authentic spices. Whether
@@ -72,11 +73,131 @@
               <p>Sonu kumar , Owner</p>
             </div>
           </div>
-
-        </div>  
+        </div>
       </section>
 
+      <!-- Menu Section-->
+      <section class="menu" id="menu">
+        <h2>Food Menu</h2>
+        <h1>Savor the flavors of the Indian Chinese Food</h1>
+        <div class="menu-columns">
+          <div class="menu-sections">
+            <h3 class="section-title">Starters and Appetizers</h3>
 
+            <!-- First starter items -->
+            <ul>
+              <li>
+                <img src="./Assets/dumplings.jpg" alt="dumplings" />
+                <div>
+                  <h4>Dumplings <span class="price">₹ 100</span></h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Second starter items -->
+            <ul>
+              <li>
+                <img src="./Assets/soup.jpg" alt="soup" />
+                <div>
+                  <h4>Soup <span class="price">₹ 120</span></h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Third starter items -->
+            <ul>
+              <li>
+                <img src="./Assets/spring_rols.jpg" alt="spring rols" />
+                <div>
+                  <h4>Spring Rols <span class="price">₹ 150</span></h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-sections">
+            <h3 class="section-title"> Main Course</h3>
+
+            <!-- First Main Course items -->
+            <ul>
+              <li>
+                <img src="./Assets/Fried_rice.jpg" alt="friedrice" />
+                <div>
+                  <h4>Fried Rice<span class="price">₹ 200</span></h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Second Main Course items -->
+            <ul>
+              <li>
+                <img src="./Assets/Manchurain.jpg" alt="Manchurian" />
+                <div>
+                  <h4> Manchurian <span class="price">₹ 200</span></h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Third Main Course items -->
+            <ul>
+              <li>
+                <img src="./Assets/Ramen.jpg" alt="ramen" />
+                <div>
+                  <h4>Ramen <span class="price">₹ 250</span></h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="video-container">
+          <!-- Image with Play Button-->
+           <img src="Assets/galary.jpg" alt="galary" class="display-image">
+           <div class="play-button" id="play-button">&#9654;</div>
+           <h2 class="video-text">Get a Glimpse of Our Fine Dine Experience</h2>
+        </div>
+      </section>
+
+      <!-- Hidden Video popup section-->
+       <section class="video-popup" id="video-popup">
+        <video  controls autoplay id="restaurantVideo">
+          <source src="Assets/galeryvideo.mp4">
+        </video>
+       </section>
     </div>
+
+    <!-- Why Choose Us section-->
+     <div class="why-choose-us">
+      <img src="Assets/choose1.jpg" alt="choose" class="choose-image">
+      <div class="features">
+        <h1>Why Choose Us</h1>
+        <div class="feature">
+          <h3> More than 200+ Exceptional Dishes</h3>
+          <p>Discover a vide variety of flavors from our menu created by award winning chefs</p>
+        </div>
+
+        <div class="feature">
+          <h3> 20+ Award Winning Chefs</h3>
+          <p> Our world class award winning chefs pour the flavors into dished that touches heart</p>
+        </div>
+
+        <div class="feature">
+          <h3> Outstanding Dinning Experience</h3>
+          <p> Enjoy Premium service adn ambiance that creates unforgatable memories </p>
+        </div>
+        <button class="learn-more-button">Learn More</button>
+      </div>
+
+      </div>
+     </div>
+  <script src="script.js"></script>
   </body>
 </html>
