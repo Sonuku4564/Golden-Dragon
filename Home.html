@@ -25,11 +25,11 @@
             <li><a href="#about">About us</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#why-choose-us">features</a></li>
           </ul>
         </div>
         <div class="cta-button">
-          <button>Book a table</button>
+          <a href="#reservation-form"><button>Book a table</button></a>
         </div>
       </nav>
 
@@ -175,7 +175,7 @@
     </div>
 
     <!-- Why Choose Us section-->
-     <div class="why-choose-us">
+     <div class="why-choose-us" id="why-choose-us">
       <img src="Assets/choose1.jpg" alt="choose" class="choose-image">
       <div class="features">
         <h1>Why Choose Us</h1>
@@ -198,6 +198,31 @@
 
       </div>
      </div>
+
+    <!-- Reservation section-->
+    <div class="reservation-form" id="reservation-form">
+      <h2>Reserve a Table</h2>
+      <p>Dine with us</p>
+      <form action="">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" placeholder="Phone Number" required>
+          <input type="number" placeholder="Number of Guests" required>
+        </div>
+        <div class="form-row">
+          <input type="date" required>
+          <input type="time" required>
+        </div>
+        <div class="form-row">
+          <textarea placeholder="Special Requests" required></textarea>
+        </div>
+        <button type="submit" class="reserve-button">Reserve Table</button>
+      </form>
+    </div>
+    
   <script src="script.js"></script>
   </body>
 </html>
