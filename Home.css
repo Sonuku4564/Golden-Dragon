@@ -65,6 +65,13 @@ body{
     background: #d7451c;
 }
 
+.navbar.scrolled a {
+    color: #333 !important;
+  }
+
+.navbar.scrolled a:hover {
+    color: #d7451c !important;
+  }
 /* Hero Section */
 
 .hero{
@@ -197,7 +204,7 @@ body{
 .menu{
     text-align: center;
     background-color:#ffe8e4;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
 .menu h2{
@@ -323,7 +330,7 @@ li img{
 /* Why Choose Us Section */
 .why-choose-us{
     background: white;
-    padding: 50px;
+    padding: 80px;
     border-radius: 12px;
     width: 100%;
 

@@ -17,3 +17,13 @@ videoPopup.addEventListener('click', ()=>{
     restaurantVideo.currentTime = 0;
     videoPopup.style.display= 'none'
 })
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener('scroll', function(){
+    if(this.window.scrollY >50){
+        navbar.classList.add('scrolled')
+    }else{
+        navbar.classList.remove('scrolled')
+    }
+})
