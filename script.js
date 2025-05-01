@@ -27,3 +27,20 @@ window.addEventListener('scroll', function(){
         navbar.classList.remove('scrolled')
     }
 })
+
+  const hamburger = document.getElementById('hamburger');
+  const navItems = document.getElementById('nav-items');
+
+  hamburger.addEventListener('click', () => {
+    navItems.classList.toggle('show');
+
+    // Toggle the icon
+    if (navItems.classList.contains('show')) {
+      hamburger.innerHTML = '&times;'; // Cross icon
+
+    } else {
+      hamburger.innerHTML = '&#9776;'; // Hamburger icon
+    }
+  });
+
+

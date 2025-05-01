@@ -72,8 +72,17 @@ body{
 .navbar.scrolled a:hover {
     color: #d7451c !important;
   }
-/* Hero Section */
 
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    color: #b53814;
+    border: none;
+    cursor: pointer;
+  }
+
+/* Hero Section */
 .hero{
     background-image: url('./Assets/Home.png');
     background-repeat: no-repeat;
@@ -95,7 +104,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(50, 50, 50, 0.25); /* Adjust the darkness */
+    background: rgba(50, 50, 50, 0.25); 
     z-index: 1;
 }
 .herosection h2{
@@ -378,8 +387,7 @@ li img{
 .reservation-form {
     background: #fff;
     padding: 40px 30px;
-    max-width: 1000px;
-    margin: 40px auto;
+    margin: 20px auto;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -446,4 +454,107 @@ input:focus, textarea:focus {
 
 .reserve-button:hover {
     background: #b53814;
+}
+
+
+/* Adding responsiveness to the webapp*/
+@media (max-width: 768px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-items {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #fff;
+      border-radius: 15px;
+    }
+  
+    .nav-items ul {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+     
+    .nav-items ul li a{
+        color: #000;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-items.show {
+      display: block;
+    }
+
+    .cta-button{
+        display: none;
+    }
+
+    .herosection h1{
+        font-size: 40px;
+        margin: 5px 0;
+    }
+
+    .about{
+        padding: 50px 100px;
+    }
+    
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .about-image img{
+        display: none;
+    }
+
+    .about-content{
+        text-align: center;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 50px;
+
+    }
+    
+.stats div {
+
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 16px;
+    color: #d7451c;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.why-choose-us {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .choose-image {
+    width: 100%;
+  }
+
+  .features {
+    width: 100%;
+  }
+
+  .reservation-form{
+    margin: 5px;
+  }
 }
