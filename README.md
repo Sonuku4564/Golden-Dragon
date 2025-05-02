@@ -17,20 +17,11 @@ Welcome to **Golden Dragon**, a visually rich, single-page restaurant applicatio
 
 
 ## 🖼️Screenshots
+Here's how the web application looks in action — clean, modern, and user-friendly!
 
-
-![Home Section](./Assets/screenshots/Home.png)
-
-![About us Section](./Assets/screenshots/About.png)
-
-![Menu Section](./Assets/screenshots/Menu.png)
-
-![Gallery Section](./Assets/screenshots/Gallery.png)
-
-![Features Section](./Assets/screenshots/feature.png)
-
-![Reserve Table Section](./Assets/screenshots/BookTable.png)
-
+<p align="center">
+  <img src="./Assets/screenshots/image.png" alt="App UI Preview" width="1000"/>
+</p>
 
 
 ## 🛠️ Technologies Used
@@ -41,9 +32,7 @@ Welcome to **Golden Dragon**, a visually rich, single-page restaurant applicatio
 - **JavaScript**
 
 
-
 ## 📌 How to Use
-
 
 1. **Clone the Repository:**
 
